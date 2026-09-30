@@ -472,7 +472,8 @@ MonoBehaviour:
     m_Flags: 0
     m_Priority: 0
   moveInput: {x: 0, y: 0}
-  speed: 10
+  speed: 15
+  xRange: 10
 --- !u!1 &475985833
 GameObject:
   m_ObjectHideFlags: 0
@@ -710,7 +711,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 187040, guid: 05554c72f25b7364caea91a88803135d, type: 3}
       propertyPath: m_Name
-      value: Dog_Beagle_01
+      value: Asteroid 1
       objectReference: {fileID: 0}
     - target: {fileID: 496630, guid: 05554c72f25b7364caea91a88803135d, type: 3}
       propertyPath: m_LocalScale.x
@@ -779,7 +780,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 187040, guid: 05554c72f25b7364caea91a88803135d, type: 3}
       propertyPath: m_Name
-      value: Dog_Beagle_01 (2)
+      value: Asteroid 3
       objectReference: {fileID: 0}
     - target: {fileID: 496630, guid: 05554c72f25b7364caea91a88803135d, type: 3}
       propertyPath: m_LocalScale.x
@@ -882,7 +883,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 187040, guid: 05554c72f25b7364caea91a88803135d, type: 3}
       propertyPath: m_Name
-      value: Dog_Beagle_01 (1)
+      value: Asteroid 2
       objectReference: {fileID: 0}
     - target: {fileID: 496630, guid: 05554c72f25b7364caea91a88803135d, type: 3}
       propertyPath: m_LocalScale.x
