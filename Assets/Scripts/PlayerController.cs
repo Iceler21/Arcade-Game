@@ -7,10 +7,15 @@ public class PlayerController : MonoBehaviour
     public Vector2 moveInput;
     public float speed = 10.0f;
     public float xRange = 10.0f;
+    public GameObject projectilePrefab;
+    public InputAction fireAction;
+    public InputAction quitAction;
     
     void Start()
     {
         moveAction.Enable();
+        fireAction.Enable();
+        quitAction.Enable();
     }
 
     void Update()
@@ -30,10 +35,24 @@ public class PlayerController : MonoBehaviour
 
         transform.Translate(Vector3.right * moveInput.x * Time.deltaTime * speed);
 
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (fireAction.triggered)
+        {
+            Debug.Log("FIRE! FIIIIRRRRRRE!!!!!!!!!");
+
+            // Launch a projectile from the player
+            Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
+        }
+        
+        if (quitAction.triggered)
         {
             Debug.Log("Quit the game!");
             Application.Quit();
         }
     }
 }
+
+/*
+
+MICAH WAS HERE
+
+*/
