@@ -3073,6 +3073,8 @@ GameObject:
   - component: {fileID: 4187367718575184383}
   - component: {fileID: 6859522150787953094}
   - component: {fileID: -2408953474357834187}
+  - component: {fileID: 4754390986060736291}
+  - component: {fileID: -8818886435737414682}
   m_Layer: 0
   m_Name: Asteroid 1
   m_TagString: Untagged
@@ -3167,7 +3169,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcfb0a12b1d23bf4dbe52b5f84f5143f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MoveForward
-  speed: 10
+  speed: 15
 --- !u!114 &-2408953474357834187
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3180,6 +3182,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6dbd8978e5d126d4dbba78858f620346, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DestroyOutOfBounds
+--- !u!65 &4754390986060736291
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6010237983004848492}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.51509154, y: 1, z: 0.54435235}
+  m_Center: {x: -0.058523573, y: 0, z: 0.018811282}
+--- !u!114 &-8818886435737414682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6010237983004848492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24f1b688a63945b4daa9d95304f68d22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DetectCollisions
 --- !u!1 &6109223857095790629
 GameObject:
   m_ObjectHideFlags: 0
