@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4549853246288612688}
   - component: {fileID: 5645181955351071803}
   - component: {fileID: 2884554461601529058}
+  - component: {fileID: -7789227569174310404}
   m_Layer: 0
   m_Name: Laser Projectile
   m_TagString: Untagged
@@ -126,3 +127,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MoveForward
   speed: 40
+--- !u!114 &-7789227569174310404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8643698993545956550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6dbd8978e5d126d4dbba78858f620346, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DestroyOutOfBounds
