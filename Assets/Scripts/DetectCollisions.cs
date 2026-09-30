@@ -23,3 +23,7 @@ public class DetectCollisions : MonoBehaviour
         Destroy(other.gameObject);
     }
 }
+
+/*
+https://youtu.be/YUcvy9PHeXs
+*/
