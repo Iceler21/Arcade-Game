@@ -3072,7 +3072,7 @@ GameObject:
   - component: {fileID: 2196637197952529063}
   - component: {fileID: 4187367718575184383}
   - component: {fileID: 6859522150787953094}
-  - component: {fileID: 4523206781625899852}
+  - component: {fileID: -2408953474357834187}
   m_Layer: 0
   m_Name: Asteroid 1
   m_TagString: Untagged
@@ -3168,7 +3168,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MoveForward
   speed: 10
---- !u!114 &4523206781625899852
+--- !u!114 &-2408953474357834187
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

@@ -3961,6 +3961,7 @@ GameObject:
   - component: {fileID: 580818818624027445}
   - component: {fileID: 8839866024061243766}
   - component: {fileID: 4726148411652068900}
+  - component: {fileID: -2695831905599821983}
   m_Layer: 0
   m_Name: Asteroid 3
   m_TagString: Untagged
@@ -4056,6 +4057,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MoveForward
   speed: 10
+--- !u!114 &-2695831905599821983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5177999962397191996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6dbd8978e5d126d4dbba78858f620346, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DestroyOutOfBounds
 --- !u!1 &5198533836372934935
 GameObject:
   m_ObjectHideFlags: 0
