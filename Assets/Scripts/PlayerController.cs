@@ -37,8 +37,6 @@ public class PlayerController : MonoBehaviour
 
         if (fireAction.triggered)
         {
-            Debug.Log("FIRE! FIIIIRRRRRRE!!!!!!!!!");
-
             // Launch a projectile from the player
             Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
         }

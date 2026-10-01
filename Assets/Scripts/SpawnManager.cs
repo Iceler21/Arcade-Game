@@ -7,7 +7,7 @@ public class SpawnManager : MonoBehaviour
     public InputAction spawnAction;
 
     private float spawnRangeX = 7;
-    private float spawnPosZ = 50;
+    private float spawnPosZ = 30;
     private float startDelay = 2;
     private float spawnInterval = 1.5f;
 

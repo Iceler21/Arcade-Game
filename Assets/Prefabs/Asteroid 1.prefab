@@ -3071,10 +3071,10 @@ GameObject:
   m_Component:
   - component: {fileID: 2196637197952529063}
   - component: {fileID: 4187367718575184383}
-  - component: {fileID: 6859522150787953094}
   - component: {fileID: -2408953474357834187}
   - component: {fileID: 4754390986060736291}
   - component: {fileID: -8818886435737414682}
+  - component: {fileID: 7355107050671153437}
   m_Layer: 0
   m_Name: Asteroid 1
   m_TagString: Untagged
@@ -3157,19 +3157,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &6859522150787953094
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6010237983004848492}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fcfb0a12b1d23bf4dbe52b5f84f5143f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MoveForward
-  speed: 15
 --- !u!114 &-2408953474357834187
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3215,6 +3202,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24f1b688a63945b4daa9d95304f68d22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DetectCollisions
+--- !u!114 &7355107050671153437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6010237983004848492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a41b9ac493e693b4fa3cbf8d1b32a56c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyForward
 --- !u!1 &6109223857095790629
 GameObject:
   m_ObjectHideFlags: 0

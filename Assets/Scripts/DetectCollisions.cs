@@ -4,7 +4,6 @@ using UnityEngine.SocialPlatforms.Impl;
 
 public class DetectCollisions : MonoBehaviour
 {
-    public static int Score = 0;
 
     void Start()
     {
@@ -18,9 +17,10 @@ public class DetectCollisions : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        Score++;
         Destroy(gameObject);
         Destroy(other.gameObject);
+
+        ScoreManager.instance.AddPoint();
     }
 }
 
