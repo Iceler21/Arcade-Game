@@ -292,8 +292,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SpawnManager
   animalPrefabs:
   - {fileID: 6010237983004848492, guid: db608ab97e21d9a44b8522cfaa3c1994, type: 3}
-  - {fileID: 623255128799130406, guid: 931b1315a5bedd04091b054a3eb73dcb, type: 3}
-  - {fileID: 5177999962397191996, guid: 276cad11daadd37488553a85c0199b83, type: 3}
   spawnAction:
     m_Name: Spawn
     m_Type: 0
@@ -604,8 +602,8 @@ Transform:
   m_GameObject: {fileID: 475985833}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 10}
-  m_LocalScale: {x: 5, y: 1, z: 5}
+  m_LocalPosition: {x: 3e-15, y: 0, z: 7.4}
+  m_LocalScale: {x: 5.26, y: 1, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 992285706}
@@ -863,8 +861,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Score: '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 30abf45937ecdc34bbc7e0027dc69b68, type: 2}
+  m_sharedMaterial: {fileID: 4687634848871250883, guid: 30abf45937ecdc34bbc7e0027dc69b68, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1273,8 +1271,8 @@ Transform:
   m_GameObject: {fileID: 1945393224}
   serializedVersion: 2
   m_LocalRotation: {x: 0.5, y: -0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: -0.61, y: 3.41, z: 0}
-  m_LocalScale: {x: 1.34836, y: 1.34836, z: 0.33709}
+  m_LocalPosition: {x: -0.61, y: 3.41, z: -1.46}
+  m_LocalScale: {x: 1.705945, y: 1.705945, z: 0.42648625}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 438052096}
