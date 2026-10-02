@@ -291,7 +291,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpawnManager
   animalPrefabs:
-  - {fileID: 6010237983004848492, guid: db608ab97e21d9a44b8522cfaa3c1994, type: 3}
+  - {fileID: 1792822100702710075, guid: 33bab11adf3b32843b2da3beee5b0138, type: 3}
   spawnAction:
     m_Name: Spawn
     m_Type: 0
