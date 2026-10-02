@@ -1,8 +1,12 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
+    // Will detect if the player can fire later.
+    private bool canFire = true;
+
     public InputAction moveAction;
     public Vector2 moveInput;
     public float speed = 10.0f;
@@ -10,6 +14,9 @@ public class PlayerController : MonoBehaviour
     public GameObject projectilePrefab;
     public InputAction fireAction;
     public InputAction quitAction;
+
+    // Boolean Cooldown timer.
+    public float cooldownTimer = 5f;
     
     void Start()
     {
@@ -35,10 +42,11 @@ public class PlayerController : MonoBehaviour
 
         transform.Translate(Vector3.right * moveInput.x * Time.deltaTime * speed);
 
-        if (fireAction.triggered)
+        if (fireAction.triggered && canFire)
         {
             // Launch a projectile from the player
             Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
+            StartCoroutine(CooldownCoroutine());
         }
         
         if (quitAction.triggered)
@@ -47,10 +55,18 @@ public class PlayerController : MonoBehaviour
             Application.Quit();
         }
     }
+
+    private IEnumerator CooldownCoroutine()
+    {
+        // 1. Turn off the boolean
+        canFire = false;
+        Debug.Log("Boolean turned off. Starting timer...");
+
+        // 2. Wait for the seconds.
+        yield return new WaitForSeconds(cooldownTimer);
+
+        // 3. Turn the boolean back on
+        canFire = true;
+        Debug.Log("Boolean turned ON again.");
+    }
 }
-
-/*
-
-MICAH WAS HERE
-
-*/

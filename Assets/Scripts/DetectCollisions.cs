@@ -4,7 +4,7 @@ using UnityEngine.SocialPlatforms.Impl;
 
 public class DetectCollisions : MonoBehaviour
 {
-
+    
     void Start()
     {
         

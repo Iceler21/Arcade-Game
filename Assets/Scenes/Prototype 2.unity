@@ -575,6 +575,7 @@ MonoBehaviour:
       m_Flags: 0
     m_Flags: 0
     m_Priority: 0
+  cooldownTimer: 1
 --- !u!1 &475985833
 GameObject:
   m_ObjectHideFlags: 0
