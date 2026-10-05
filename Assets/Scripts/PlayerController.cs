@@ -15,6 +15,8 @@ public class PlayerController : MonoBehaviour
     public InputAction fireAction;
     public InputAction quitAction;
 
+    private bool notChangedSpeed = true;
+
     // Boolean Cooldown timer.
     public float cooldownTimer = 5f;
     
@@ -53,6 +55,12 @@ public class PlayerController : MonoBehaviour
         {
             Debug.Log("Quit the game!");
             Application.Quit();
+        }
+
+        if (ScoreManager.instance.GetScore() >= 50)
+        {
+            speed = 40.0f;
+            canFire = true;
         }
     }
 

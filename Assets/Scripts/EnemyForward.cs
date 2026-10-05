@@ -13,7 +13,14 @@ public class EnemyForward : MonoBehaviour
         if (ScoreManager.instance != null)
         {
             int currentScore = ScoreManager.instance.GetScore();
-            speed = baseSpeed + (currentScore * 0.5f);
+            if (ScoreManager.instance.GetScore() >= 50)
+            {
+                speed = baseSpeed + (currentScore);
+            }
+            else
+            {
+                speed = baseSpeed + (currentScore * 0.5f);
+            }
         }
         else
         {
