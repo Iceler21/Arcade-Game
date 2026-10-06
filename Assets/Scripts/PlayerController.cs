@@ -1,6 +1,8 @@
 using System.Collections;
+using Unity.VectorGraphics;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -19,6 +21,7 @@ public class PlayerController : MonoBehaviour
 
     // Boolean Cooldown timer.
     public float cooldownTimer = 5f;
+    public string EscapeScene;
     
     void Start()
     {
@@ -53,8 +56,9 @@ public class PlayerController : MonoBehaviour
         
         if (quitAction.triggered)
         {
-            Debug.Log("Quit the game!");
-            Application.Quit();
+            Debug.Log("Quit the scene!");
+            SceneManager.LoadScene(EscapeScene);
+
         }
 
         if (ScoreManager.instance.GetScore() >= 50)

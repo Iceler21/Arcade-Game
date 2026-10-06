@@ -503,7 +503,7 @@ MonoBehaviour:
       m_Flags: 4
     - m_Name: up
       m_Id: 78a6839a-1626-49a4-aea7-d0357372ca9e
-      m_Path: <Keyboard>/w
+      m_Path: <HID>/{Back}
       m_Interactions: 
       m_Processors: 
       m_Groups: 
@@ -511,7 +511,7 @@ MonoBehaviour:
       m_Flags: 8
     - m_Name: down
       m_Id: ca97db5f-9da1-4b52-ab52-9ec88f536e84
-      m_Path: <Keyboard>/s
+      m_Path: <HID>/{Back}
       m_Interactions: 
       m_Processors: 
       m_Groups: 
@@ -576,6 +576,7 @@ MonoBehaviour:
     m_Flags: 0
     m_Priority: 0
   cooldownTimer: 1
+  EscapeScene: Story Ending
 --- !u!1 &475985833
 GameObject:
   m_ObjectHideFlags: 0
