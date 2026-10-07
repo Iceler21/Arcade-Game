@@ -49,6 +49,9 @@ public class PlayerController : MonoBehaviour
 
         if (fireAction.triggered && canFire)
         {
+            // Play sound effect
+
+            
             // Launch a projectile from the player
             Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
             StartCoroutine(CooldownCoroutine());
