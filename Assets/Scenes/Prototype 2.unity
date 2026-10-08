@@ -557,6 +557,24 @@ MonoBehaviour:
       m_Flags: 0
     m_Flags: 0
     m_Priority: 0
+  easyFireAction:
+    m_Name: Easy Fire
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 5c834c78-f20e-44f8-ba34-def56d3385b8
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 22c1a63c-910c-484e-8549-7996629b9bf2
+      m_Path: <Keyboard>/space
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Easy Fire
+      m_Flags: 0
+    m_Flags: 0
+    m_Priority: 0
   quitAction:
     m_Name: Quit
     m_Type: 0
@@ -816,7 +834,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 462645f72cf1327499afdfcf855b79c3, type: 3}
+  m_Resource: {fileID: 8300000, guid: 69fbe70a4b4864841a9c1d84bea1f8da, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.464
   m_Pitch: 1

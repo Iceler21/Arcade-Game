@@ -15,9 +15,9 @@ public class PlayerController : MonoBehaviour
     public float xRange = 7.0f;
     public GameObject projectilePrefab;
     public InputAction fireAction;
+    public InputAction easyFireAction;
     public InputAction quitAction;
 
-    private bool notChangedSpeed = true;
 
     // Boolean Cooldown timer.
     public float cooldownTimer = 5f;
@@ -27,6 +27,7 @@ public class PlayerController : MonoBehaviour
     {
         moveAction.Enable();
         fireAction.Enable();
+        easyFireAction.Enable();
         quitAction.Enable();
     }
 
@@ -47,16 +48,32 @@ public class PlayerController : MonoBehaviour
 
         transform.Translate(Vector3.right * moveInput.x * Time.deltaTime * speed);
 
-        if (fireAction.triggered && canFire)
+        if (ScoreManager.instance.GetScore() >= 70)
         {
-            // Play sound effect
+            Keyboard kb = Keyboard.current;
+
+            if (kb.spaceKey.isPressed)
+            {
+                // Play sound effect
 
             
-            // Launch a projectile from the player
-            Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
-            StartCoroutine(CooldownCoroutine());
+                // Launch a projectile from the player
+                Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
+            }
         }
-        
+        else
+        {
+            if (fireAction.triggered && canFire)
+            {
+                // Play sound effect
+
+            
+                // Launch a projectile from the player
+                Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
+                StartCoroutine(CooldownCoroutine());
+            }
+        }
+
         if (quitAction.triggered)
         {
             Debug.Log("Quit the scene!");
@@ -64,10 +81,14 @@ public class PlayerController : MonoBehaviour
 
         }
 
-        if (ScoreManager.instance.GetScore() >= 50)
+        if (ScoreManager.instance.GetScore() >= 50 && ScoreManager.instance.GetScore() < 75)
         {
             speed = 40.0f;
             canFire = true;
+        }
+        else if (ScoreManager.instance.GetScore() >= 75)
+        {
+            speed = 10.0f;
         }
     }
 
